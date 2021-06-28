@@ -65,3 +65,23 @@ Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e
 Completed 200 OK in 13978ms (Views: 13971.2ms | Allocations: 16650)
 
 
+Started GET "/" for 127.0.0.1 at 2021-06-28 12:03:09 +0300
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 3235)
+Completed 200 OK in 46ms (Views: 44.3ms | Allocations: 3804)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-28 12:03:12 +0300
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 3095)
+Completed 200 OK in 47ms (Views: 44.7ms | Allocations: 3541)
+
+
