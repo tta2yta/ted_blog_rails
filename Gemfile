@@ -7,7 +7,7 @@ ruby '3.0.1'
 gem 'rails', '~> 6.1.3', '>= 6.1.3.2'
 
 group :development, :test do 
-   #gem 'sqlite3', '~> 1.4'    #gem to use in development-test environment
+   gem 'sqlite3', '~> 1.4'    #gem to use in development-test environment
    gem 'byebug', '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
@@ -33,6 +33,8 @@ gem 'jbuilder', '~> 2.7'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
+
+gem 'devise'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
