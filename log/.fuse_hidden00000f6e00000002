@@ -1,0 +1,200 @@
+Started GET "/" for 127.0.0.1 at 2021-06-28 10:36:05 +0300
+  [1m[35m (7.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ted/.rvm/gems/ruby-3.0.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ted/.rvm/gems/ruby-3.0.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 16.6ms | Allocations: 596)
+Completed 200 OK in 97ms (Views: 55.2ms | ActiveRecord: 0.0ms | Allocations: 4730)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-28 10:46:01 +0300
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/ted/.rvm/gems/ruby-3.0.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/ted/.rvm/gems/ruby-3.0.1/gems/railties-6.1.4/lib/rails/templates/rails/welcome/index.html.erb (Duration: 18.5ms | Allocations: 490)
+Completed 200 OK in 51ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 3607)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-28 11:53:03 +0300
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 149)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /media/ted/New Volume/Microverse/rails/ted_blog/ted_blog_rails/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: e2a8a876c5815bee1e21
+Version: webpack 4.46.0
+Time: 7407ms
+Built at: 06/28/2021 11:53:17 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 13960.5ms | Allocations: 15199)
+Completed 200 OK in 13978ms (Views: 13971.2ms | Allocations: 16650)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-28 12:03:09 +0300
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 45)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 39.2ms | Allocations: 3235)
+Completed 200 OK in 46ms (Views: 44.3ms | Allocations: 3804)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-28 12:03:12 +0300
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 3095)
+Completed 200 OK in 47ms (Views: 44.7ms | Allocations: 3541)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-28 18:04:44 +0300
+  [1m[35m (81.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 13.3ms | Allocations: 361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 317.5ms | Allocations: 6599)
+Completed 200 OK in 547ms (Views: 377.1ms | ActiveRecord: 0.0ms | Allocations: 10258)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-30 14:34:49 +0300
+  [1m[35m (14.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 177.6ms | Allocations: 6266)
+Completed 200 OK in 422ms (Views: 241.9ms | ActiveRecord: 0.0ms | Allocations: 9930)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-30 14:49:24 +0300
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 3662)
+Completed 200 OK in 52ms (Views: 47.9ms | Allocations: 5127)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-30 14:49:26 +0300
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 3110)
+Completed 200 OK in 49ms (Views: 47.3ms | Allocations: 3603)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-30 14:49:26 +0300
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 34.8ms | Allocations: 3111)
+Completed 200 OK in 39ms (Views: 36.2ms | Allocations: 3554)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-30 18:44:09 +0300
+Processing by HomeController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/new.html.erb within layouts/application
+  Rendered home/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 81.3ms | Allocations: 6124)
+Completed 200 OK in 96ms (Views: 92.9ms | Allocations: 7584)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-30 18:45:23 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 150)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 3613)
+Completed 200 OK in 86ms (Views: 79.9ms | Allocations: 5072)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-30 18:47:29 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 52.1ms | Allocations: 3601)
+Completed 200 OK in 66ms (Views: 59.6ms | Allocations: 5053)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-06-30 18:47:36 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 2.5ms | Allocations: 99)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 55.2ms | Allocations: 3141)
+Completed 200 OK in 60ms (Views: 56.7ms | Allocations: 3732)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-06-30 19:15:39 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 8.8ms | Allocations: 136)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 456.2ms | Allocations: 3618)
+Completed 200 OK in 514ms (Views: 491.6ms | Allocations: 4848)
+
+
+Started GET "/" for 127.0.0.1 at 2021-06-30 19:15:45 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 110)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 94.1ms | Allocations: 3162)
+Completed 200 OK in 105ms (Views: 96.2ms | Allocations: 3774)
+
+
