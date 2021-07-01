@@ -1054,3 +1054,291 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 72ms (Views: 70.1ms | ActiveRecord: 1.0ms | Allocations: 5256)
 
 
+Started GET "/" for 127.0.0.1 at 2021-07-01 12:22:46 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUserDb Load (2.2ms)[0m  [1m[34mSELECT "user_dbs".* FROM "user_dbs" WHERE "user_dbs"."id" = ? ORDER BY "user_dbs"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:21
+  Rendered home/_header.html.erb (Duration: 11.9ms | Allocations: 1668)
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 5655)
+Completed 200 OK in 80ms (Views: 71.7ms | ActiveRecord: 2.2ms | Allocations: 7090)
+
+
+Started DELETE "/user_dbs/sign_out" for 127.0.0.1 at 2021-07-01 12:22:49 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUserDb Load (0.9ms)[0m  [1m[34mSELECT "user_dbs".* FROM "user_dbs" WHERE "user_dbs"."id" = ? ORDER BY "user_dbs"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.9ms | Allocations: 1898)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 12:22:49 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.5ms | Allocations: 277)
+  Rendered layouts/_alert.html.erb (Duration: 3.2ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 3843)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms | Allocations: 4308)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 12:23:11 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 3.8ms | Allocations: 646)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 4632)
+Completed 200 OK in 63ms (Views: 55.6ms | ActiveRecord: 0.0ms | Allocations: 6048)
+
+
+Started GET "/user_dbs/sign_in" for 127.0.0.1 at 2021-07-01 12:23:14 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 5.2ms | Allocations: 557)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 29.5ms | Allocations: 2136)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 234)
+  Rendered layout layouts/application.html.erb (Duration: 132.6ms | Allocations: 5898)
+Completed 200 OK in 155ms (Views: 152.0ms | ActiveRecord: 0.0ms | Allocations: 8402)
+
+
+Started POST "/user_dbs/sign_in" for 127.0.0.1 at 2021-07-01 12:23:21 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user_db"=>{"email"=>"ttt@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUserDb Load (3.0ms)[0m  [1m[34mSELECT "user_dbs".* FROM "user_dbs" WHERE "user_dbs"."email" = ? ORDER BY "user_dbs"."id" ASC LIMIT ?[0m  [["email", "ttt@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 292ms (ActiveRecord: 3.0ms | Allocations: 3574)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 12:23:21 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUserDb Load (0.9ms)[0m  [1m[34mSELECT "user_dbs".* FROM "user_dbs" WHERE "user_dbs"."id" = ? ORDER BY "user_dbs"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/home/_header.html.erb:18
+  Rendered home/_header.html.erb (Duration: 6.5ms | Allocations: 1132)
+  Rendered layouts/_alert.html.erb (Duration: 2.0ms | Allocations: 130)
+  Rendered layout layouts/application.html.erb (Duration: 62.3ms | Allocations: 4703)
+Completed 200 OK in 66ms (Views: 64.0ms | ActiveRecord: 0.9ms | Allocations: 5160)
+
+
+Started DELETE "/user_dbs/sign_out" for 127.0.0.1 at 2021-07-01 12:23:27 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUserDb Load (1.0ms)[0m  [1m[34mSELECT "user_dbs".* FROM "user_dbs" WHERE "user_dbs"."id" = ? ORDER BY "user_dbs"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 12ms (ActiveRecord: 1.0ms | Allocations: 1814)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 12:23:28 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 236)
+  Rendered layouts/_alert.html.erb (Duration: 0.3ms | Allocations: 46)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 3588)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.0ms | Allocations: 4039)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 12:28:12 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.2ms | Allocations: 236)
+  Rendered layout layouts/application.html.erb (Duration: 43.3ms | Allocations: 3478)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms | Allocations: 3923)
+
+
+Started GET "/user_dbs/sign_in" for 127.0.0.1 at 2021-07-01 12:28:13 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 156)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1080)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.0ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 88.1ms | Allocations: 5150)
+Completed 200 OK in 96ms (Views: 90.9ms | ActiveRecord: 0.0ms | Allocations: 5830)
+
+
+Started GET "/user_dbs/sign_in" for 127.0.0.1 at 2021-07-01 12:28:22 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 14.2ms | Allocations: 559)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 28.3ms | Allocations: 2067)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 4.3ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 106.8ms | Allocations: 6453)
+Completed 200 OK in 131ms (Views: 128.2ms | ActiveRecord: 0.0ms | Allocations: 8441)
+
+
+Started GET "/user_dbs/sign_in" for 127.0.0.1 at 2021-07-01 12:28:24 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 156)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1051)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 51.5ms | Allocations: 4459)
+Completed 200 OK in 56ms (Views: 53.5ms | ActiveRecord: 0.0ms | Allocations: 5203)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:28:47 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 8.5ms | Allocations: 240)
+  Rendered devise/shared/_links.html.erb (Duration: 9.6ms | Allocations: 533)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 70.5ms | Allocations: 2594)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 12.8ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 413.4ms | Allocations: 6940)
+Completed 200 OK in 462ms (Views: 460.0ms | Allocations: 9069)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:28:48 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 46)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 108)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 1109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 270.6ms | Allocations: 4517)
+Completed 200 OK in 280ms (Views: 277.5ms | Allocations: 5181)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:28:50 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.2ms | Allocations: 46)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 108)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 13.2ms | Allocations: 1109)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 4.2ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 81.3ms | Allocations: 4517)
+Completed 200 OK in 90ms (Views: 87.0ms | Allocations: 5111)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:29:08 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 10.1ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 11.8ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 92.7ms | Allocations: 2454)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 11.6ms | Allocations: 576)
+  Rendered layout layouts/application.html.erb (Duration: 451.0ms | Allocations: 6841)
+Completed 200 OK in 497ms (Views: 495.4ms | Allocations: 8737)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:29:34 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 11.2ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 11.5ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 76.2ms | Allocations: 2459)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 10.2ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 416.5ms | Allocations: 6844)
+Completed 200 OK in 491ms (Views: 488.1ms | Allocations: 8811)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:29:57 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 9.4ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 13.8ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 73.9ms | Allocations: 2466)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 11.4ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 425.3ms | Allocations: 6862)
+Completed 200 OK in 498ms (Views: 495.6ms | Allocations: 8826)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:30:15 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.0ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 6.5ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 40.0ms | Allocations: 2475)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 6.2ms | Allocations: 579)
+  Rendered layout layouts/application.html.erb (Duration: 152.1ms | Allocations: 6870)
+Completed 200 OK in 178ms (Views: 174.6ms | Allocations: 8836)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:30:32 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 6.6ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 7.2ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 55.0ms | Allocations: 2478)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 8.0ms | Allocations: 576)
+  Rendered layout layouts/application.html.erb (Duration: 288.4ms | Allocations: 6871)
+Completed 200 OK in 326ms (Views: 323.1ms | Allocations: 8846)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:31:22 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.9ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 3.7ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 20.7ms | Allocations: 2483)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 4.2ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 79.1ms | Allocations: 6869)
+Completed 200 OK in 97ms (Views: 94.7ms | Allocations: 8839)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:31:50 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.1ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 8.9ms | Allocations: 491)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 44.6ms | Allocations: 2481)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 7.1ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 153.9ms | Allocations: 6868)
+Completed 200 OK in 179ms (Views: 176.0ms | Allocations: 8838)
+
+
+Started GET "/user_dbs/sign_up" for 127.0.0.1 at 2021-07-01 12:31:59 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 11.5ms | Allocations: 231)
+  Rendered devise/shared/_links.html.erb (Duration: 11.4ms | Allocations: 492)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 93.5ms | Allocations: 2481)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 10.8ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 446.5ms | Allocations: 6866)
+Completed 200 OK in 534ms (Views: 531.1ms | Allocations: 8830)
+
+
