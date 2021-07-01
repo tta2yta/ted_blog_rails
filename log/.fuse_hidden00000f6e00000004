@@ -420,3 +420,376 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 90ms (Views: 88.2ms | Allocations: 4381)
 
 
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:46:35 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 0 pending migration:
+
+
+
+):
+  
+activerecord (6.1.4) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.4) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.4) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activesupport (6.1.4) lib/active_support/evented_file_update_checker.rb:65:in `execute_if_updated'
+activerecord (6.1.4) lib/active_record/migration.rb:597:in `block in call'
+activerecord (6.1.4) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.4) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.2) lib/mini_profiler/profiler.rb:384:in `call'
+webpacker (5.4.0) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:47:05 +0300
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 147)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.0ms | Allocations: 306)
+  Rendered layout layouts/application.html.erb (Duration: 609.4ms | Allocations: 15104)
+Completed 200 OK in 634ms (Views: 618.9ms | ActiveRecord: 0.0ms | Allocations: 16580)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:47:28 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 993.6ms | Allocations: 10997)
+Completed 200 OK in 999ms (Views: 997.0ms | ActiveRecord: 0.0ms | Allocations: 11486)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-07-01 09:48:07 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 1305)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 63.9ms | Allocations: 4783)
+Completed 200 OK in 116ms (Views: 69.1ms | ActiveRecord: 2.5ms | Allocations: 6677)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 09:48:13 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 303.6ms | Allocations: 6405)
+  Rendered users/new.html.erb within layouts/application (Duration: 312.9ms | Allocations: 6773)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.4ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 356.1ms | Allocations: 10196)
+Completed 200 OK in 385ms (Views: 357.7ms | ActiveRecord: 7.4ms | Allocations: 14934)
+
+
+Started GET "/users/edit/1" for 127.0.0.1 at 2021-07-01 09:48:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/edit/1"):
+  
+Started GET "/users/edit/" for 127.0.0.1 at 2021-07-01 09:48:25 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"edit"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+Completed 404 Not Found in 15ms (ActiveRecord: 1.4ms | Allocations: 1980)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=edit):
+  
+app/controllers/users_controller.rb:62:in `set_user'
+Started GET "/users/" for 127.0.0.1 at 2021-07-01 09:48:31 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 736)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.1ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 4145)
+Completed 200 OK in 59ms (Views: 53.8ms | ActiveRecord: 3.0ms | Allocations: 4677)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 09:48:37 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.3ms | Allocations: 1115)
+  Rendered users/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1230)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 67.0ms | Allocations: 4504)
+Completed 200 OK in 71ms (Views: 69.5ms | ActiveRecord: 0.0ms | Allocations: 4980)
+
+
+Started POST "/users" for 127.0.0.1 at 2021-07-01 09:48:52 +0300
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"first_name"=>"aaa", "last_name"=>"bbb", "email"=>"ttt", "phone"=>"111"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mUser Create (11.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "email", "phone", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["first_name", "aaa"], ["last_name", "bbb"], ["email", "ttt"], ["phone", "111"], ["created_at", "2021-07-01 06:48:52.186000"], ["updated_at", "2021-07-01 06:48:52.186000"]]
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (47.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/users/1
+Completed 302 Found in 89ms (ActiveRecord: 58.8ms | Allocations: 5732)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-07-01 09:48:52 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 333)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 49.9ms | Allocations: 3614)
+Completed 200 OK in 61ms (Views: 51.8ms | ActiveRecord: 1.0ms | Allocations: 4781)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2021-07-01 09:48:55 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.7ms | Allocations: 1119)
+  Rendered users/edit.html.erb within layouts/application (Duration: 15.9ms | Allocations: 1423)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 92.0ms | Allocations: 4796)
+Completed 200 OK in 108ms (Views: 93.9ms | ActiveRecord: 4.0ms | Allocations: 6472)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-07-01 09:49:02 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 843)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.4ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 83.4ms | Allocations: 4274)
+Completed 200 OK in 91ms (Views: 86.8ms | ActiveRecord: 1.8ms | Allocations: 5251)
+
+
+Started GET "/users/show" for 127.0.0.1 at 2021-07-01 09:52:08 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+Completed 404 Not Found in 9ms (ActiveRecord: 1.6ms | Allocations: 1110)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=show):
+  
+app/controllers/users_controller.rb:62:in `set_user'
+Started GET "/users/1/show" for 127.0.0.1 at 2021-07-01 09:52:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/1/show"):
+  
+Started GET "/users/1/edit" for 127.0.0.1 at 2021-07-01 09:53:05 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 11.7ms | Allocations: 1087)
+  Rendered users/edit.html.erb within layouts/application (Duration: 14.5ms | Allocations: 1229)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 106)
+  Rendered layout layouts/application.html.erb (Duration: 73.4ms | Allocations: 4502)
+Completed 200 OK in 87ms (Views: 76.2ms | ActiveRecord: 5.2ms | Allocations: 5504)
+
+
+Started GET "/users/1/show" for 127.0.0.1 at 2021-07-01 09:53:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/1/show"):
+  
+Started GET "/users/1" for 127.0.0.1 at 2021-07-01 09:53:23 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 60.3ms | Allocations: 3401)
+Completed 200 OK in 71ms (Views: 62.3ms | ActiveRecord: 1.3ms | Allocations: 4403)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-07-01 09:53:36 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 3396)
+Completed 200 OK in 85ms (Views: 74.1ms | ActiveRecord: 3.0ms | Allocations: 4397)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-07-01 09:53:36 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 42.6ms | Allocations: 3401)
+Completed 200 OK in 51ms (Views: 44.6ms | ActiveRecord: 1.1ms | Allocations: 4402)
+
+
+Started GET "/users/1/s" for 127.0.0.1 at 2021-07-01 09:53:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/1/s"):
+  
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:56:24 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 21.4ms | Allocations: 4495)
+  Rendered layout layouts/application.html.erb (Duration: 86.3ms | Allocations: 8398)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.0ms | Allocations: 9683)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `users_new_path' for #<ActionView::Base:0x00000000010ef0>
+Did you mean?  users_path):
+    17:         </li>
+    18: 
+    19:           <li class="nav-item">
+    20:           <%= link_to 'New User', users_new_path, class:'nav-link'%>
+    21:         </li>
+    22:     
+    23:       </ul>
+  
+app/views/home/_header.html.erb:20
+app/views/layouts/application.html.erb:21
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:57:07 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 9.3ms | Allocations: 1479)
+  Rendered layout layouts/application.html.erb (Duration: 312.9ms | Allocations: 5380)
+Completed 500 Internal Server Error in 350ms (ActiveRecord: 0.0ms | Allocations: 6711)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]
+Did you mean?  user_url
+               users_url
+               users_path
+               new_user_url):
+    13:           <%= link_to 'About Us', about_path, class:'nav-link'%>
+    14:         </li>
+    15:           <li class="nav-item">
+    16:           <%= link_to 'Users', user_path, class:'nav-link'%>
+    17:         </li>
+    18: 
+    19:           <li class="nav-item">
+  
+app/views/home/_header.html.erb:16
+app/views/layouts/application.html.erb:21
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:57:46 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 11.7ms | Allocations: 403)
+  Rendered layout layouts/application.html.erb (Duration: 356.7ms | Allocations: 4308)
+Completed 200 OK in 415ms (Views: 390.7ms | ActiveRecord: 0.0ms | Allocations: 5682)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-07-01 09:57:50 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 1362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 123.0ms | Allocations: 5075)
+Completed 200 OK in 141ms (Views: 127.6ms | ActiveRecord: 2.3ms | Allocations: 6757)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 09:57:52 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 10.5ms | Allocations: 1508)
+  Rendered users/new.html.erb within layouts/application (Duration: 24.8ms | Allocations: 2415)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 108.5ms | Allocations: 5845)
+Completed 200 OK in 118ms (Views: 111.6ms | ActiveRecord: 0.0ms | Allocations: 6512)
+
+
