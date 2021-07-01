@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-    belongs :user_db
+    belongs_to :user_db
 end

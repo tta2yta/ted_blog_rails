@@ -30,6 +30,10 @@
     <%= form.label :phone %>
     <%= form.text_field :phone, class:'form-control' %>
   </div>
+  <div class="field form-group">
+  <%= form.number_field :user_db_id, id: :user_user_db_id,
+  class:'form-control', value: current_user_db.id%>
+ 
 
   <div class="actions form-group">
     <%= form.submit class:'btn btn-secondary mt-3'%>
