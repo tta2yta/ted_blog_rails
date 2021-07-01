@@ -793,3 +793,279 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 118ms (Views: 111.6ms | ActiveRecord: 0.0ms | Allocations: 6512)
 
 
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 10:03:58 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 20.7ms | Allocations: 1577)
+  Rendered users/new.html.erb within layouts/application (Duration: 48.6ms | Allocations: 1965)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 6.6ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 343.7ms | Allocations: 6030)
+Completed 200 OK in 392ms (Views: 374.6ms | Allocations: 7371)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 10:04:00 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.0ms | Allocations: 330)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 200)
+  Rendered layout layouts/application.html.erb (Duration: 127.9ms | Allocations: 3944)
+Completed 200 OK in 145ms (Views: 136.6ms | Allocations: 5737)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-07-01 10:04:03 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 30.3ms | Allocations: 2503)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 139.0ms | Allocations: 5970)
+Completed 200 OK in 152ms (Views: 143.4ms | ActiveRecord: 5.8ms | Allocations: 6624)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-07-01 10:05:47 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (4.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 22.5ms | Allocations: 1312)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 13.3ms | Allocations: 368)
+  Rendered layout layouts/application.html.erb (Duration: 322.8ms | Allocations: 5416)
+Completed 200 OK in 385ms (Views: 351.1ms | ActiveRecord: 4.8ms | Allocations: 6757)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-07-01 10:06:45 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 20.4ms | Allocations: 1319)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 4.1ms | Allocations: 363)
+  Rendered layout layouts/application.html.erb (Duration: 92.2ms | Allocations: 5422)
+Completed 200 OK in 119ms (Views: 103.6ms | ActiveRecord: 1.8ms | Allocations: 6816)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-07-01 10:08:21 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (9.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 26.9ms | Allocations: 1322)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 9.1ms | Allocations: 363)
+  Rendered layout layouts/application.html.erb (Duration: 381.4ms | Allocations: 5420)
+Completed 200 OK in 432ms (Views: 401.4ms | ActiveRecord: 9.2ms | Allocations: 6812)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2021-07-01 10:09:55 +0300
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 4.5ms | Allocations: 449)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 5.1ms | Allocations: 363)
+  Rendered layout layouts/application.html.erb (Duration: 120.5ms | Allocations: 4688)
+Completed 200 OK in 148ms (Views: 135.7ms | ActiveRecord: 3.0ms | Allocations: 7365)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 10:18:55 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 13.1ms | Allocations: 1580)
+  Rendered users/new.html.erb within layouts/application (Duration: 25.7ms | Allocations: 1989)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 47.1ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 200.3ms | Allocations: 6187)
+Completed 200 OK in 222ms (Views: 211.6ms | Allocations: 8215)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 10:19:39 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 19.5ms | Allocations: 1580)
+  Rendered users/new.html.erb within layouts/application (Duration: 42.1ms | Allocations: 1971)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 6.9ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 348.1ms | Allocations: 6044)
+Completed 200 OK in 404ms (Views: 376.3ms | Allocations: 7441)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 10:21:14 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.2ms | Allocations: 1519)
+  Rendered users/new.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1879)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 1954)
+Completed 500 Internal Server Error in 29ms (Allocations: 3306)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_with(model: user) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+        <% user.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= form.label :first_name %>
+    <%= form.text_field :first_name, class:'form-control' %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :last_name %>
+    <%= form.text_field :last_name, class:'form-control' %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :email %>
+    <%= form.text_field :email, class:'form-control' %>
+  </div>
+
+  <div class="field form-group">
+    <%= form.label :phone %>
+    <%= form.text_field :phone, class:'form-control' %>
+  </div>
+
+  <div class="actions form-group">
+    <%= form.submit, class:'btn btn-secondary'%>
+  </div>
+<% end %>
+
+):
+1:    <%= form_with(model: user) do |form| %>
+2:      <% if user.errors.any? %>
+3:        <div id="error_explanation">
+4:          <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+5:    
+6:          <ul>
+7:            <% user.errors.each do |error| %>
+8:              <li><%= error.full_message %></li>
+9:            <% end %>
+10:          </ul>
+11:        </div>
+12:      <% end %>
+13:    
+14:      <div class="field form-group">
+15:        <%= form.label :first_name %>
+16:        <%= form.text_field :first_name, class:'form-control' %>
+17:      </div>
+18:    
+19:      <div class="field form-group">
+20:        <%= form.label :last_name %>
+21:        <%= form.text_field :last_name, class:'form-control' %>
+22:      </div>
+23:    
+24:      <div class="field form-group">
+25:        <%= form.label :email %>
+26:        <%= form.text_field :email, class:'form-control' %>
+27:      </div>
+28:    
+29:      <div class="field form-group">
+30:        <%= form.label :phone %>
+31:        <%= form.text_field :phone, class:'form-control' %>
+32:      </div>
+33:    
+34:      <div class="actions form-group">
+35:        <%= form.submit, class:'btn btn-secondary'%>
+36:      </div>
+37:    <% end %>
+  
+app/views/users/_form.html.erb:35: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:35: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:35: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:35: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:35: syntax error, unexpected label, expecting '='
+app/views/users/_form.html.erb:35: syntax error, unexpected label, expecting '='
+app/views/users/new.html.erb:3
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 10:22:18 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 22.8ms | Allocations: 1622)
+  Rendered users/new.html.erb within layouts/application (Duration: 49.5ms | Allocations: 2010)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 9.7ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 336.4ms | Allocations: 6080)
+Completed 200 OK in 386ms (Views: 366.2ms | Allocations: 7481)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 10:22:38 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.7ms | Allocations: 1621)
+  Rendered users/new.html.erb within layouts/application (Duration: 14.7ms | Allocations: 2008)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 1.9ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 68.9ms | Allocations: 6072)
+Completed 200 OK in 82ms (Views: 75.8ms | Allocations: 7462)
+
+
+Started GET "/users/new" for 127.0.0.1 at 2021-07-01 10:22:45 +0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.9ms | Allocations: 1621)
+  Rendered users/new.html.erb within layouts/application (Duration: 17.1ms | Allocations: 2008)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.5ms | Allocations: 364)
+  Rendered layout layouts/application.html.erb (Duration: 86.7ms | Allocations: 6078)
+Completed 200 OK in 108ms (Views: 98.7ms | Allocations: 7469)
+
+
+Started GET "/users" for 127.0.0.1 at 2021-07-01 10:24:19 +0300
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/users/index.html.erb:17
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:17
+  Rendered users/index.html.erb within layouts/application (Duration: 39.2ms | Allocations: 2105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 95.5ms | Allocations: 5434)
+Completed 200 OK in 111ms (Views: 98.5ms | ActiveRecord: 8.2ms | Allocations: 6631)
+
+
+Started GET "/users/1/edit" for 127.0.0.1 at 2021-07-01 10:24:22 +0300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:62:in `set_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 8.7ms | Allocations: 1114)
+  Rendered users/edit.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1401)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 108.6ms | Allocations: 4850)
+Completed 200 OK in 134ms (Views: 115.9ms | ActiveRecord: 6.8ms | Allocations: 6545)
+
+
