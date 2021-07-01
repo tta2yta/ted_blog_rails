@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_07_01_083614) do
+ActiveRecord::Schema.define(version: 2021_07_01_132607) do
 
   create_table "user_dbs", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 2021_07_01_083614) do
     t.string "phone"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_db_id"
+    t.index ["user_db_id"], name: "index_users_on_user_db_id"
   end
 
 end
