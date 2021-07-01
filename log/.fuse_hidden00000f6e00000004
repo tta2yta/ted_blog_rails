@@ -231,3 +231,192 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 98ms (Views: 90.8ms | Allocations: 5354)
 
 
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:31:52 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 144)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 82.3ms | Allocations: 3534)
+  Rendered layout layouts/application.html.erb (Duration: 141.4ms | Allocations: 7375)
+Completed 500 Internal Server Error in 152ms (Allocations: 8711)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+  <%= link_to 'Ted Blog', root_path, class:'navbar-brand' %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%link_to 'Home', root_path, class:'nav-link' active%>
+        </li>
+        <li class="nav-item">
+          <%link_to 'About Us', about_path, class:'nav-link'%>
+        </li>
+    
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+):
+1:    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+2:      <div class="container-fluid">
+3:      <%= link_to 'Ted Blog', root_path, class:'navbar-brand' %>
+4:        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+5:          <span class="navbar-toggler-icon"></span>
+6:        </button>
+7:        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+8:          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+9:            <li class="nav-item">
+10:              <%link_to 'Home', root_path, class:'nav-link' active%>
+11:            </li>
+12:            <li class="nav-item">
+13:              <%link_to 'About Us', about_path, class:'nav-link'%>
+14:            </li>
+15:        
+16:          </ul>
+17:          <form class="d-flex">
+18:            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+19:            <button class="btn btn-outline-success" type="submit">Search</button>
+20:          </form>
+21:        </div>
+22:      </div>
+23:    </nav>
+  
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting `end'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting `end'
+app/views/layouts/application.html.erb:21
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:32:47 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 148)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 2.6ms | Allocations: 1142)
+  Rendered layout layouts/application.html.erb (Duration: 63.6ms | Allocations: 4982)
+Completed 500 Internal Server Error in 89ms (Allocations: 6314)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+  <%= link_to 'Ted Blog', root_path, class:'navbar-brand' %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <%= link_to 'Home', root_path, class:'nav-link' active%>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'About Us', about_path, class:'nav-link'%>
+        </li>
+    
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+):
+1:    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+2:      <div class="container-fluid">
+3:      <%= link_to 'Ted Blog', root_path, class:'navbar-brand' %>
+4:        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+5:          <span class="navbar-toggler-icon"></span>
+6:        </button>
+7:        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+8:          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+9:            <li class="nav-item">
+10:              <%= link_to 'Home', root_path, class:'nav-link' active%>
+11:            </li>
+12:            <li class="nav-item">
+13:              <%= link_to 'About Us', about_path, class:'nav-link'%>
+14:            </li>
+15:        
+16:          </ul>
+17:          <form class="d-flex">
+18:            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+19:            <button class="btn btn-outline-success" type="submit">Search</button>
+20:          </form>
+21:        </div>
+22:      </div>
+23:    </nav>
+  
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/home/_header.html.erb:10: syntax error, unexpected local variable or method, expecting ')'
+app/views/layouts/application.html.erb:21
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:33:13 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 11.2ms | Allocations: 348)
+  Rendered layout layouts/application.html.erb (Duration: 330.4ms | Allocations: 4194)
+Completed 200 OK in 375ms (Views: 351.5ms | Allocations: 5563)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:33:16 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.7ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 3271)
+Completed 200 OK in 62ms (Views: 60.4ms | Allocations: 3760)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:33:17 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.5ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 54.6ms | Allocations: 3271)
+Completed 200 OK in 60ms (Views: 58.1ms | Allocations: 3713)
+
+
+Started GET "/about" for 127.0.0.1 at 2021-07-01 09:33:18 +0300
+Processing by HomeController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 1.5ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.6ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 70.2ms | Allocations: 3985)
+Completed 200 OK in 79ms (Views: 74.4ms | Allocations: 4528)
+
+
+Started GET "/" for 127.0.0.1 at 2021-07-01 09:33:21 +0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 40)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered home/_header.html.erb (Duration: 0.8ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 84.6ms | Allocations: 3939)
+Completed 200 OK in 90ms (Views: 88.2ms | Allocations: 4381)
+
+
